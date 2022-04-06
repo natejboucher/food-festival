@@ -6,18 +6,23 @@
     "scripts": {
         "webpack": "webpack --watch",
         "build": "webpack",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start:dev": "webpack-dev-server"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "file-loader": "^6.2.0",
         "webpack": "^4.43.0",
         "webpack-bundle-analyzer": "^4.5.0",
-        "webpack-cli": "^3.3.11"
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.8.0"
     },
     "dependencies": {
+        "@webpack-cli/serve": "^1.6.1",
         "bootstrap": "^4.3.1",
+        "image-webpack-loader": "^8.1.0",
         "jquery": "^3.4.1",
         "popper.js": "^1.16.0",
         "save": "^2.4.0"
